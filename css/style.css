@@ -1,0 +1,63 @@
+p {
+  color: gold;
+  text-align: center;
+}
+body {
+  background-color: aqua;
+  background-image: url("../img/kopi.jpg");
+  background-size: cover;
+  color: white;
+}
+
+fieldset,
+legend {
+  border: yellow groove 5px;
+  border-radius: 5px;
+}
+
+legend {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+table {
+  border: 10px;
+  margin: auto;
+}
+
+div#menu {
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a.item:link,
+a.item:visited,
+a.item:active {
+  color: brown;
+  text-decoration: none;
+  border: 2px solid yellow;
+  font-size: 18pt;
+  background-color: white;
+}
+a.item:hover {
+  text-decoration: none;
+  color: blue;
+  border: 2px solid greenyellow;
+  padding: 15px;
+  background-color: greenyellow;
+}
+
+li.menu {
+  color: blue;
+}
+
+h1 {
+  text-shadow: 3px 3px yellow;
+  color: yellowgreen;
+}
+
+h1.latihan {
+  text-align: center;
+}
