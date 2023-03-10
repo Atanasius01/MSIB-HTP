@@ -1,0 +1,30 @@
+<script>
+  let pelanggan = "Budi";
+  let produk = "TV";
+
+  if (produk == "TV") {
+    hargaSat = 3000000;
+  } else if (produk == "Motor") {
+    hargaSat = 12000000;
+  } else if (produk == "Kulkas") {
+    hargaSat = 4000000;
+  } else {
+    hargaSat = 0;
+  }
+
+  let jumlahBeli = 10;
+  let bruto = hargaSat * jumlahBeli;
+
+  document.write(
+    "Data Pembelian" +
+      "<br>" +
+      " Produk : " +
+      produk +
+      "<br> Harga Satuan :" +
+      hargaSat +
+      "<br> Jumlah item :" +
+      jumlahBeli +
+      " <br> Total Belanja :" +
+      bruto
+  );
+</script>
