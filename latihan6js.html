@@ -15,6 +15,9 @@
   let jumlahBeli = 10;
   let bruto = hargaSat * jumlahBeli;
 
+  let diskon = produk == "TV" ? (10 / 100) * bruto : 0;
+  let harga_diskon = bruto - diskon;
+
   document.write(
     "Data Pembelian" +
       "<br>" +
@@ -25,6 +28,8 @@
       "<br> Jumlah item :" +
       jumlahBeli +
       " <br> Total Belanja :" +
-      bruto
+      bruto +
+      "<br> Harga Diskon :" +
+      harga_diskon
   );
 </script>
