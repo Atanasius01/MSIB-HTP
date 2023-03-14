@@ -1,0 +1,81 @@
+<script>
+  let p1 = { nama: "Atan", nilai: 95 };
+  let p2 = { nama: "Zifa", nilai: 51 };
+  let p3 = { nama: "Vina", nilai: 85 };
+  let p4 = { nama: "Lulu", nilai: 61 };
+  let p5 = { nama: "Gugun", nilai: 81 };
+  let p6 = { nama: "Mila", nilai: 71 };
+
+  let person = [p1, p2, p3, p4, p5, p6];
+</script>
+<h3>
+  <table style="padding: 10; text-align: center; width: 100%">
+    <thead>
+      <tr bgcolor="#FEFAE0">
+        <th>No</th>
+        <th>Nama</th>
+        <th>Nilai</th>
+        <th>Keterangan</th>
+        <th>Grade</th>
+        <th>Predikat</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <script>
+        var no = 1;
+        var warna;
+
+        for (p of person) {
+          let ket = p.nilai >= 60 ? "Lulus" : "Gagal";
+          warna = p.nilai >= 80 ? "green" : "yellow";
+
+          if (p.nilai >= 90 && p.nilai <= 100) grade = "A";
+          else if (p.nilai >= 80 && p.nilai <= 89)
+            grade = "B"; //set grade A - E (menggunakan if multi kondisi)
+          else if (p.nilai >= 70 && p.nilai <= 79)
+            grade = "C"; //set grade A - E (menggunakan if multi kondisi)
+          else if (p.nilai >= 60 && p.nilai <= 69)
+            grade = "D"; //set grade A - E (menggunakan if multi kondisi)
+          else if (p.nilai >= 0 && p.nilai <= 59) grade = "E";
+          else grade = "";
+
+          switch (grade) {
+            case "A":
+              predikat = "Sangat Baik";
+              break;
+            case "B":
+              predikat = "Baik";
+              break;
+            case "C":
+              predikat = "Cukup";
+              break;
+            case "D":
+              predikat = "Kurang";
+              break;
+            case "E":
+              predikat = "Sangat Kurang";
+              break;
+          }
+
+          //set grade A - E (menggunakan if multi kondisi)
+          //A = 90 - 100, B = 80-89 dan seterusnya sampai E
+
+          //set predikat menggunakan switch case
+
+          //A = sangant baik, B = Baik, C = cukup, D = kurang, E = Sangat Kurang
+          //Set warna warni table menggunakan table
+          grade: document.write(`
+              <tr bgcolor="${warna}">
+                <td>${no++}</td>
+                <td>${p.nama}</td>
+                <td>${p.nilai}</td>
+                <td>${ket}</td>
+                <td>${grade}</td>
+                <td>${predikat}</td>
+              </tr>`);
+        }
+      </script>
+    </tbody>
+  </table>
+</h3>
