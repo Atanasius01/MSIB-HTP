@@ -1,0 +1,29 @@
+<script>
+  document.write("Bilangan 1" + "<br> Bilangan 2" + "<br> bilangan 3");
+  document.write("<hr> Cetak Bilangan 1 sampai 50");
+
+  var angka;
+  for (angka = 1; angka <= 50; angka++) {
+    document.write("<br> Bilangan" + angka);
+  }
+
+  document.write("<hr> mencetak bilangan ganjil");
+  let ganjil;
+  for (ganjil = 1; ganjil <= 20; ganjil++) {
+    if (ganjil % 2 == 1) {
+      document.write("<br> bilangan ganjil : " + ganjil);
+    }
+  }
+
+  let ganjil1;
+  for (ganjil1 = 1; ganjil1 <= 20; ganjil1 += 2) {
+    document.write("<br> Bilangan ganjil :" + ganjil1);
+  }
+
+  document.write("<br>====Mencetak angka 1 sampai 30====");
+  let angka2 = 1;
+  while (angka2 <= 30) {
+    document.write("<br> Cetak bilangan" + angka2);
+    angka2++;
+  }
+</script>
