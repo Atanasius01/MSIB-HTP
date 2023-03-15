@@ -7,6 +7,23 @@
     <title>Document</title>
   </head>
   <body>
-    <h1></h1>
+    <!-- pemanggilan id -->
+    <!-- <h1 id="coba">Hello World</h1> -->
+    <h1 id="coba"></h1>
+    <!-- pemanggilan class -->
+    <h1 class="coba1">Hello World</h1>
+    <!-- penggilan tag -->
+    <h3>Coba tag</h3>
+    <h2 id="warna">Hallo Gaes</h2>
+    <script>
+      // Pembuatan element id
+      var x = (document.getElementById("coba").innerHTML = "Hello world");
+      // Pembuatan element class
+      var y = document.getElementsByClassName("coba1");
+      // Pembuatan element tag
+      var z = document.getElementsByTagName("h2");
+      // Pemanggilan atrribute stle
+      var zi = (document.getElementById("warna").style.color = "red");
+    </script>
   </body>
 </html>
